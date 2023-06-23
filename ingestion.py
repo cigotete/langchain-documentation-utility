@@ -12,5 +12,10 @@ def ingest_docs() -> None:
     documents = text_splitter.split_documents(documents=raw_documents)
     print(f"Splitted into {len(documents)} chunks")
 
+    for doc in documents:
+        old_path = doc.metadata["source"]
+        new_url = old_path.replace("langchain-docs", "https:/")
+        doc.metadata.update({"source": new_url})
+
 if __name__ == "__main__":
     ingest_docs()
