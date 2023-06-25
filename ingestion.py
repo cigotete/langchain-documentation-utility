@@ -1,6 +1,15 @@
 import os
 from langchain.document_loaders import ReadTheDocsLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.embeddings import OpenAIEmbeddings
+from langchain.vectorstores import Pinecone
+import pinecone
+
+pinecone.init(
+    api_key=os.environ["PINECONE_API_KEY"],
+    environment=os.environ["PINECONE_ENVIRONMENT_REGION"],
+)
+
 
 def ingest_docs() -> None:
     loader = ReadTheDocsLoader(path="langchain-docs/langchain.readthedocs.io/en/latest", encoding="utf-8")
@@ -16,6 +25,14 @@ def ingest_docs() -> None:
         old_path = doc.metadata["source"]
         new_url = old_path.replace("langchain-docs", "https:/")
         doc.metadata.update({"source": new_url})
+
+    print(f"Going to insert {len(documents)} to Pinecone")
+    embeddings = OpenAIEmbeddings()
+    Pinecone.from_documents(
+        documents, embeddings, index_name="langchain-doc-index"
+    )
+    print("****** Added to Pinecone vectorstore vectors")
+
 
 if __name__ == "__main__":
     ingest_docs()
