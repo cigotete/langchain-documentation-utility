@@ -4,7 +4,7 @@ from backend.core import run_llm
 import streamlit as st
 from streamlit_chat import message
 
-st.header("Promting documentation")
+st.header("Asking to documentation")
 
 prompt = st.text_input("Prompt", placeholder="Enter your prompt here..")
 
