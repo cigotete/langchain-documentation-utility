@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "f376735d9afeeeba16208413e3bb9f5d96208192e87b81ef7eac2e3516582880"
+            "sha256": "b3d1cadad278a295f530a6006acfec96d0a9cc3ce9c1aa1ddf19b92149413025"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -724,18 +724,18 @@
         },
         "langchain": {
             "hashes": [
-                "sha256:a6b261f3be941eeac2d9b37fbf8996fa4279ef724f064e8c90813046126da85b",
-                "sha256:af9587c2eb317a6e33123f8a4ee8ccd8685cfab62359ea4fec52c962d9646acf"
+                "sha256:3b3d8fe1ad951191ba183dda996601d199e09eab859979a6a0defde8f11cac4a",
+                "sha256:6624582b445cb24f486ee9032dc58136aa1e5862ec7287e43739e930168aaa22"
             ],
             "index": "pypi",
-            "version": "==0.0.215"
+            "version": "==0.0.216"
         },
         "langchainplus-sdk": {
             "hashes": [
                 "sha256:6520c864a23dcadbe6fb7233a117347f6acc32725a97758e59354704c50de303",
                 "sha256:899675fe850bb0829691ce7643d5c3b4425de1535b6f2d6ce1e5f5457ffb05bf"
             ],
-            "markers": "python_version < '4.0' and python_full_version >= '3.8.1'",
+            "markers": "python_full_version >= '3.8.1' and python_version < '4.0'",
             "version": "==0.0.17"
         },
         "loguru": {
@@ -1441,7 +1441,7 @@
                 "sha256:0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86",
                 "sha256:961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2'",
             "version": "==2.8.2"
         },
         "python-docx": {
@@ -1650,7 +1650,7 @@
                 "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926",
                 "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2'",
             "version": "==1.16.0"
         },
         "smmap": {
@@ -1742,11 +1742,11 @@
         },
         "streamlit-chat": {
             "hashes": [
-                "sha256:bec918a6ff9d24fbc842d5a0e7c492e30e1ef71c3a72b94b0cb4be1a7300881e",
-                "sha256:e5911c8e3d5bbdd444782a0eb46a5f0cf24247124eb165bcc2e759540767ac3c"
+                "sha256:539a526e680628b09ab5b06547fb1dd03aa846798c027002bb1e971e9fefd303",
+                "sha256:cd5cda5672e8f9c882fdaaca0c2710465ae8d82bc44f5c1cc71fe89bc1c219cb"
             ],
             "index": "pypi",
-            "version": "==0.1.1"
+            "version": "==0.0.2.2"
         },
         "tabulate": {
             "hashes": [
@@ -1804,7 +1804,7 @@
                 "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b",
                 "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"
             ],
-            "markers": "python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "markers": "python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2'",
             "version": "==0.10.2"
         },
         "toolz": {
